@@ -1,0 +1,21 @@
+.section-mailing{
+    padding: 85px 0;
+
+    &-title{
+        @include font-style(Montserrat, 18px, 600, 1.1, _ ,center, $main-black);
+        margin: 0 auto 20px auto;
+        padding-top: 80px;
+        border-top: 1px solid $underline;
+        max-width: 1110px;
+    }
+
+    &-desc{
+        @include font-style(Montserrat, 16px, 400, 1.5, _ ,center, $main-grey);
+        margin-bottom: 30px;
+    }
+
+    &-narr{
+        @include font-style(Montserrat, 13px, 400, 1.5, _ ,center, $main-grey);
+
+    }
+}

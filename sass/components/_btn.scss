@@ -1,0 +1,25 @@
+.section-hero-btn{
+    @extend %btn;
+}
+
+.section-app-btn{
+    @extend %btn;
+}
+
+.section-specializing-btn{
+    @extend %btn;
+    margin: 0;
+}
+
+.projects-btn{
+    @extend %btn;
+}
+
+.mailing-btn{
+    @extend %btn;
+    border-radius: 0 30px 30px 0;
+    margin: 0;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}

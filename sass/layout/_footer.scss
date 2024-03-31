@@ -1,0 +1,44 @@
+.footer{
+    padding: 70px 0 30px 0;
+    background-color: $light-bg;
+
+    &-wrap{
+        @include positioning(flex, _, center, flex-start, 40px, _);
+        padding-bottom: 70px;
+        margin: 0 auto 30px auto;
+        border-bottom: 1px solid $underline;
+        max-width: 1110px;
+    }
+
+    &-desc{
+        @include font-style(Montserrat, 13px, 400, 1.5, _, center, $main-grey);
+    }
+}
+
+.addres-list-link{
+    @include positioning(flex, _, _, center, 17px, _);
+}
+
+.addres-svg{
+    fill: currentColor;
+}
+
+.addres-title, .link-title, .projects-title, .social-title{
+    @include font-style(Montserrat, 18px, 600, 1.1, _, left, $main-black);
+    margin-bottom: 35px;
+}
+
+.addres-list-link, .link-list-item, .projects-list-link, .social-list-link{
+    @include font-style(Montserrat, 14px, 400, 1.5, _, left, $main-grey);
+}
+
+.addres-list, .link-list, .projects-list,.social-list{
+    @include positioning(flex, column, _, _, 30px, _);
+}
+
+.link-list-item::before, .projects-list-item::before, .social-list-item::before{
+    content: url("../img/footer-decor.png");
+    width: 5px;
+    height: 9px;
+    margin-right: 13px;
+}

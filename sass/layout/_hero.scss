@@ -1,0 +1,15 @@
+.section-hero{
+    padding: 219px 0 335px 0;
+    background-image: url("../img/hero-bg.jpg");
+
+    &-desc{
+        @include font-style(Montserrat, 16px, 500, 1.2, _, center, $main-white);
+        margin-bottom: 20px;
+    }
+
+    &-title{
+        @include font-style(Montserrat, 48px, 800, 1.3, _, center, $main-white);
+        max-width: 829px;
+        margin: 0 auto 63px auto;
+    }
+}

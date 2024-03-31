@@ -1,0 +1,59 @@
+.section-specializing{
+    background-image: url("../img/specializing-bg.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 100px 0 85px 0;
+
+    &-title{
+        @include font-style(Montserrat, 36px, 700, 1.4, _, left, $main-white);
+        max-width: 540px;
+        margin-right: 370px;
+    }
+}
+
+.specializing-container{
+    @include positioning(flex, _, center, center, _, _);
+    margin-bottom: 78px;
+}
+
+.specializing-list{
+    @include positioning(flex, _, center, center, 30px, _);
+    padding-bottom: 85px;
+    border-bottom: 1px solid $underline;
+    max-width: 1110px;
+    margin: 0 auto;
+
+    &-item{
+        counter-reset: zero 0;
+        @include positioning(flex, column, _, _, _, _);
+        max-width: 350px;
+    }
+
+    &-title{
+        @include font-style(Montserrat, 18px, 600, 1.1, _, left, $main-black);
+        margin: 30px 0;
+        counter-reset: counter;
+
+        &:before{
+            content: counter(zero) counter(mycounter) ".";
+            counter-increment: mycounter;
+            color: $main-blue;
+            margin-right: 3px;
+        }
+    }
+
+    &-desc{
+        @include font-style(Montserrat, 16px, 400, 1.7, _, left, $main-grey);
+        margin-bottom: 47px;
+    }
+
+    &-link{
+        @include font-style(Montserrat, 16px, 500, 1.1, _, left, $main-blue);
+        text-decoration: underline;
+    }
+
+    &-img{
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,39 @@
+.section-app{
+    padding: 110px 0 105px 0;
+
+    &-title{
+        @include font-style(Montserrat, 36px, 700, 1.4, _, center, $main-dark);
+        max-width: 739px;
+        margin: 0 auto 32px auto;
+    }
+
+    &-desc{
+        @include font-style(Montserrat, 16px, 400, 1.5, _, center, $main-grey);
+        max-width: 730px;
+        margin: 0 auto 70px auto; 
+    }
+}
+
+.app-list{
+    @include positioning(flex, _, center, _, 27px, _);
+    margin-bottom: 55px;
+
+    &-item{
+        @include positioning(flex, column, space-between, _, 17px, wrap);
+        max-height: 139px;
+    }
+
+    &-title{
+        @include font-style(Montserrat, 18px, 600, 1.1, _, left, $main-black);
+        margin-bottom: 12px;
+    }
+
+    &-desc{
+        @include font-style(Montserrat, 14px, 400, 1.5, _, left, $main-grey);
+        max-width: 222px;
+    }
+
+    &-container{
+        margin-top: 45px;
+    }
+}

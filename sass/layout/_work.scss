@@ -1,0 +1,15 @@
+.section-work{
+    padding: 70px 0 85px 0;
+    background-image: url("../img/work-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+
+    &-title{
+        @include font-style(Montserrat, 36px, 700, 1.5, _, center, $main-white);
+    }
+
+    &-desc{
+        @include font-style(Montserrat, 16px, 400, 1.5, _, center, $main-white);
+    }
+}

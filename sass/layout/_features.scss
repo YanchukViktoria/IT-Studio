@@ -1,0 +1,53 @@
+.section-features{
+    padding: 100px 0 70px 0;
+    background-color: $light-bg;
+
+    &-title{
+        @include font-style(Montserrat, 36px, 700, 1.4, _, left, $main-dark);
+        margin-bottom: 60px;
+        max-width: 424px;
+    }
+
+    &-desc{
+        @include font-style(Montserrat, 16px, 400, 1.5, _, left, $main-grey);
+        max-width: 489px;
+        margin-bottom: 42px;
+    }
+
+    &-link{
+        @include font-style(Montserrat, 16px, 400, 1.1, _, left, $main-blue);
+        text-decoration: underline;
+    }
+}
+
+.features-wrap{
+    @include positioning(flex, _, center, center, 121px, _);
+    margin-bottom: 90px;
+}
+
+.features-list{
+    padding-top: 70px;
+    max-width: 1110px;
+    border-top: 1px solid $underline;
+    @include positioning(flex, _, center, _, 100px, _);
+    margin: 0 auto;
+
+    &-item{
+        @include positioning(flex, _, center, center, 13px, wrap);
+        max-width: 104px
+    }
+
+    &-link{
+        @include font-style(Montserrat, 36px, 400, 1.4, _, center, $main-black);
+        @include positioning(flex, _, _, center, 20px, _);
+    }
+
+    &-desc{
+        @include font-style(Montserrat, 14px, 400, 1.4, _, center, $main-grey);
+
+    }
+}
+
+.features-svg{
+    fill: $main-blue
+}

@@ -1,0 +1,18 @@
+@mixin font-style( $ff, $fz, $fw, $lh, $ls, $ta, $color){
+    font-family: $ff;
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;
+    text-align: $ta;
+    color: $color;
+}
+
+@mixin positioning($disp, $fd, $jc, $al, $gp, $wr){
+    display: $disp;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $al;
+    gap: $gp;
+    flex-wrap: $wr;
+} 

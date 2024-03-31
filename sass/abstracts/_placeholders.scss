@@ -1,0 +1,8 @@
+%btn{
+    @include font-style(Montserrat, 16px, 500, 1.1, _, center, $main-white);
+    padding: 14px 36px;
+    border-radius: 30px;
+    background-color: $main-blue;
+    margin: 0 auto;
+    display: block;
+}
