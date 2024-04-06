@@ -20,6 +20,15 @@
     border-radius: 0 30px 30px 0;
     margin: 0;
     display: inline-block;
-    position: absolute;
     top: 0;
+    margin-left: auto;
+}
+
+.work-btn{
+    @include font-style(Montserrat, 16px, 500, 1.5, _, _, $main-white);
+    background-color: inherit;
+    padding: 20px 29px 20px 40px;
+    border-radius: 200px;
+    border: 1px solid $main-white;
+    @include positioning(flex, _, center, center, 21px, _);
 }

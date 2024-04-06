@@ -11,5 +11,15 @@
 
     &-desc{
         @include font-style(Montserrat, 16px, 400, 1.5, _, center, $main-white);
+        margin-bottom: 70px;
     }
+}
+
+.work-container{
+    width: 970px;
+    height: 430px;
+    background-image: url("../img/work-container.png");
+    margin: 0 auto;
+    @include positioning(flex, _, center, center, _, _);
+    border-radius: 10px;
 }

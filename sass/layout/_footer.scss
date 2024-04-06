@@ -3,7 +3,7 @@
     background-color: $light-bg;
 
     &-wrap{
-        @include positioning(flex, _, center, flex-start, 40px, _);
+        @include positioning(flex, _, center, flex-start, _, _);
         padding-bottom: 70px;
         margin: 0 auto 30px auto;
         border-bottom: 1px solid $underline;
@@ -34,6 +34,7 @@
 
 .addres-list, .link-list, .projects-list,.social-list{
     @include positioning(flex, column, _, _, 30px, _);
+    margin-right: 40px;
 }
 
 .link-list-item::before, .projects-list-item::before, .social-list-item::before{
@@ -41,4 +42,12 @@
     width: 5px;
     height: 9px;
     margin-right: 13px;
+}
+
+.addres-container{
+    margin-right: 30px;
+}
+
+.link-container, .projects{
+    margin-right: 40px;
 }
