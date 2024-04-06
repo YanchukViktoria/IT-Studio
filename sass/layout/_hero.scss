@@ -1,6 +1,8 @@
 .section-hero{
     padding: 219px 0 335px 0;
     background-image: url("../img/hero-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
 
     &-desc{
         @include font-style(Montserrat, 16px, 500, 1.2, _, center, $main-white);

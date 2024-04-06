@@ -1,8 +1,7 @@
 .section-specializing{
-    background-image: url("../img/specializing-bg.jpg");
-    background-size: contain;
+    background: linear-gradient(to left, rgba(95, 18, 208, 1), rgba(80, 77, 194, 1));
     background-repeat: no-repeat;
-    background-position: top;
+    background-size: 100% 480px;
     padding: 100px 0 85px 0;
 
     &-title{

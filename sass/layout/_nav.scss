@@ -5,7 +5,7 @@
         position: relative;
         left: 290px;
         &-item{
-
+            position: relative;
         }
 
         &-link{
@@ -13,4 +13,13 @@
 
         }
     }
+}
+
+.current::before{
+    content: "";
+    position: absolute;
+    border: 2px solid $main-white;
+    width: 107px;
+    top: 56px;
+    left: -20px;
 }
