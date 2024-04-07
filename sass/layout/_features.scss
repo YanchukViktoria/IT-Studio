@@ -16,7 +16,7 @@
 
     &-link{
         @include font-style(Montserrat, 16px, 400, 1.1, _, left, $main-blue);
-        text-decoration: underline;
+        @extend %underline;
     }
 }
 

@@ -1,9 +1,10 @@
 .nav{
+    display: flex;
 
     &-list{
         @include positioning(flex, _, center, center, 30px, _);
-        position: relative;
-        left: 290px;
+        margin-left: auto;
+
         &-item{
             position: relative;
         }

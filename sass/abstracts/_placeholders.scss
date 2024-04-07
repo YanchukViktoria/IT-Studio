@@ -6,3 +6,8 @@
     margin: 0 auto;
     display: block;
 }
+
+%underline{
+    border-bottom: 1px solid $main-blue;
+    width: 100%;
+}

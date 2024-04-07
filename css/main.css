@@ -13,6 +13,11 @@
   display: block;
 }
 
+.specializing-list-link, .section-features-link {
+  border-bottom: 1px solid rgb(73, 133, 255);
+  width: 100%;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -120,6 +125,11 @@ html {
   outline: none;
 }
 
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
 header {
   padding: 40px 0;
   border-bottom: 1px solid rgb(161, 161, 161);
@@ -128,6 +138,11 @@ header {
   width: 100%;
 }
 
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,8 +160,7 @@ header {
   gap: 30px;
   -ms-flex-wrap: _;
       flex-wrap: _;
-  position: relative;
-  left: 290px;
+  margin-left: auto;
 }
 .nav-list-item {
   position: relative;
@@ -407,7 +421,6 @@ header {
   letter-spacing: _;
   text-align: left;
   color: rgb(73, 133, 255);
-  text-decoration: underline;
 }
 
 .features-wrap {
@@ -626,7 +639,7 @@ header {
   letter-spacing: _;
   text-align: left;
   color: rgb(73, 133, 255);
-  text-decoration: underline;
+  width: 100px;
 }
 .specializing-list-img {
   border-radius: 10px;
