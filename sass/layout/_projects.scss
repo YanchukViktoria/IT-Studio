@@ -14,7 +14,7 @@
     }
 }
 
-.projects-list{
-    @include positioning(flex, column, center, _, 30px, _);
+.project-list{
+    @include positioning(flex, row, center, _, 30px, _);
     margin-bottom: 50px;
 }
