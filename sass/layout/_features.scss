@@ -37,7 +37,7 @@
         max-width: 104px
     }
 
-    &-link{
+    &-container{
         @include font-style(Montserrat, 36px, 400, 1.4, _, center, $main-black);
         @include positioning(flex, _, _, center, 20px, _);
     }
