@@ -39,8 +39,9 @@
 
 .link-list-item::before, .projects-list-item::before, .social-list-item::before{
     content: url("../img/footer-decor.png");
-    width: 5px;
-    height: 9px;
+    display: inline-block;
+    width: 5;
+    height: 9;
     margin-right: 13px;
 }
 
