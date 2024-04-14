@@ -525,8 +525,8 @@ header {
 }
 
 .section-specializing {
-  background: -webkit-gradient(linear, right top, left top, from(rgb(95, 18, 208)), to(rgb(80, 77, 194)));
-  background: linear-gradient(to left, rgb(95, 18, 208), rgb(80, 77, 194));
+  background-image: -webkit-gradient(linear, right top, left top, from(rgb(95, 18, 208)), to(rgb(80, 77, 194)));
+  background-image: linear-gradient(to left, rgb(95, 18, 208), rgb(80, 77, 194));
   background-repeat: no-repeat;
   background-size: 100% 480px;
   padding: 100px 0 85px 0;
