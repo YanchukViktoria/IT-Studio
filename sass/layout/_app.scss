@@ -19,7 +19,7 @@
     margin-bottom: 55px;
 
     &-item{
-        @include positioning(flex, column, space-between, _, 17px, wrap);
+        @include positioning(flex, _, _, baseline, 17px, _);
         max-height: 139px;
     }
 
@@ -32,8 +32,16 @@
         @include font-style(Montserrat, 14px, 400, 1.5, _, left, $main-grey);
         max-width: 222px;
     }
+}
 
-    &-container{
-        margin-top: 45px;
-    }
+.app-svg-container{
+    border: 1px solid $main-blue;
+    border-radius: 50%;
+    padding: 25px;
+}
+
+.app-container{
+    border: 1px solid $underline;
+    border-radius: 50%;
+    padding: 10px;
 }

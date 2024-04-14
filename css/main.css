@@ -68,9 +68,6 @@ html {
 .mailing-btn {
   border-radius: 0 30px 30px 0;
   margin: 0;
-  display: block;
-  top: 0;
-  margin-left: auto;
 }
 
 .work-btn {
@@ -208,7 +205,6 @@ header {
   padding-bottom: 70px;
   margin: 0 auto 30px auto;
   border-bottom: 1px solid rgb(224, 224, 224);
-  max-width: 1110px;
 }
 .footer-desc {
   font-family: Montserrat;
@@ -351,17 +347,17 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: _;
-      -ms-flex-align: _;
-          align-items: _;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: _;
+      -ms-flex-pack: _;
+          justify-content: _;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   gap: 17px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: _;
+      flex-wrap: _;
   max-height: 139px;
 }
 .app-list-title {
@@ -384,8 +380,17 @@ header {
   color: rgb(153, 153, 153);
   max-width: 222px;
 }
-.app-list-container {
-  margin-top: 45px;
+
+.app-svg-container {
+  border: 1px solid rgb(73, 133, 255);
+  border-radius: 50%;
+  padding: 25px;
+}
+
+.app-container {
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 50%;
+  padding: 10px;
 }
 
 .section-features {
@@ -446,7 +451,6 @@ header {
 
 .features-list {
   padding-top: 70px;
-  max-width: 1110px;
   border-top: 1px solid rgb(224, 224, 224);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -525,10 +529,9 @@ header {
 }
 
 .section-specializing {
-  background-image: -webkit-gradient(linear, right top, left top, from(rgb(95, 18, 208)), to(rgb(80, 77, 194)));
-  background-image: linear-gradient(to left, rgb(95, 18, 208), rgb(80, 77, 194));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgb(95, 18, 208)), color-stop(50%, rgb(255, 255, 255)));
+  background-image: linear-gradient(to bottom, rgb(95, 18, 208) 50%, rgb(255, 255, 255) 50%);
   background-repeat: no-repeat;
-  background-size: 100% 480px;
   padding: 100px 0 85px 0;
 }
 .section-specializing-title {
@@ -723,6 +726,7 @@ header {
   width: 970px;
   height: 430px;
   background-image: url("../img/work-container.png");
+  background-size: cover;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
