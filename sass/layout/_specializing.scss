@@ -6,12 +6,11 @@
     &-title{
         @include font-style(Montserrat, 36px, 700, 1.4, _, left, $main-white);
         max-width: 540px;
-        margin-right: 370px;
     }
 }
 
 .specializing-container{
-    @include positioning(flex, _, center, center, _, _);
+    @include positioning(flex, _, space-between, center, _, _);
     margin-bottom: 78px;
 }
 
@@ -19,8 +18,6 @@
     @include positioning(flex, _, center, center, 30px, _);
     padding-bottom: 85px;
     border-bottom: 1px solid $underline;
-    max-width: 1110px;
-    margin: 0 auto;
 
     &-item{
         counter-reset: zero 0;

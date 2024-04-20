@@ -19,13 +19,14 @@
     margin-bottom: 55px;
 
     &-item{
-        @include positioning(flex, _, _, baseline, 17px, _);
-        max-height: 139px;
+        @include positioning(flex, _, _, _, 17px, _);
+        // max-height: 139px;
     }
 
     &-title{
         @include font-style(Montserrat, 18px, 600, 1.1, _, left, $main-black);
         margin-bottom: 12px;
+        margin-top: 46px;
     }
 
     &-desc{
@@ -37,11 +38,19 @@
 .app-svg-container{
     border: 1px solid $main-blue;
     border-radius: 50%;
-    padding: 25px;
+    @include positioning(flex, _, center, center, _, _);
+    width: 90px;
+    height: 90px;
+}
+
+.app-list-container{
+    // padding-top: 46px;
 }
 
 .app-container{
     border: 1px solid $underline;
+    @include positioning(flex, _, center, center, _, _);
     border-radius: 50%;
-    padding: 10px;
+    width: 110px;
+    height: 110px;
 }

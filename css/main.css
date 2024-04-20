@@ -123,7 +123,7 @@ html {
 }
 
 .container {
-  max-width: 1130px;
+  max-width: 1113px;
   margin: 0 auto;
 }
 
@@ -352,13 +352,12 @@ header {
   -webkit-box-pack: _;
       -ms-flex-pack: _;
           justify-content: _;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: _;
+      -ms-flex-align: _;
+          align-items: _;
   gap: 17px;
   -ms-flex-wrap: _;
       flex-wrap: _;
-  max-height: 139px;
 }
 .app-list-title {
   font-family: Montserrat;
@@ -369,6 +368,7 @@ header {
   text-align: left;
   color: rgb(0, 0, 0);
   margin-bottom: 12px;
+  margin-top: 46px;
 }
 .app-list-desc {
   font-family: Montserrat;
@@ -384,13 +384,47 @@ header {
 .app-svg-container {
   border: 1px solid rgb(73, 133, 255);
   border-radius: 50%;
-  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: _;
+  -ms-flex-wrap: _;
+      flex-wrap: _;
+  width: 90px;
+  height: 90px;
 }
 
 .app-container {
   border: 1px solid rgb(224, 224, 224);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: _;
+  -ms-flex-wrap: _;
+      flex-wrap: _;
   border-radius: 50%;
-  padding: 10px;
+  width: 110px;
+  height: 110px;
 }
 
 .section-features {
@@ -543,7 +577,6 @@ header {
   text-align: left;
   color: rgb(255, 255, 255);
   max-width: 540px;
-  margin-right: 370px;
 }
 
 .specializing-container {
@@ -554,9 +587,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: _;
           flex-direction: _;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -585,8 +618,6 @@ header {
       flex-wrap: _;
   padding-bottom: 85px;
   border-bottom: 1px solid rgb(224, 224, 224);
-  max-width: 1110px;
-  margin: 0 auto;
 }
 .specializing-list-item {
   counter-reset: zero 0;
