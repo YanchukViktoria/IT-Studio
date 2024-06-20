@@ -16,3 +16,19 @@
     gap: $gp;
     flex-wrap: $wr;
 } 
+
+@mixin retina($dev-ratio, $dpi, $dppx){
+    @media (min-device-pixel-ratio:$dev-ratio),
+    (min-resolution:$dpi),
+    (min-resolution:$dppx)
+    {
+        @content;
+    }
+}
+
+@mixin bg-image($webp, $fallback){
+    @supports (background-image: url("#{$webp}")){
+        background-image: url("#{$webp}");
+    }
+    background-image: url("#{$fallback}");
+}

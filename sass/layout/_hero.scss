@@ -1,8 +1,16 @@
 .section-hero{
     padding: 219px 0 335px 0;
-    background-image: url("../img/hero-bg.jpg");
+    @include bg-image("../main/desc-webp/bg-hero-1x.webp", "../main/desc/bg-hero-1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
+
+    @include retina(2, 192dpi, 2dppx){
+        @include bg-image("../main/desc-webp/bg-hero-2x.webp", "../main/desc/bg-hero-2x.jpg");
+    }
+
+    @include retina(3, 288dpi, 3dppx){
+        @include bg-image("../main/desc-webp/bg-hero-3x.webp", "../main/desc/bg-hero-3x.jpg");
+    }
 
     &-desc{
         @include font-style(Montserrat, 16px, 500, 1.2, _, center, $main-white);

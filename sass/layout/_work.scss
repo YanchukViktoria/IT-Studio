@@ -1,9 +1,17 @@
 .section-work{
     padding: 70px 0 85px 0;
-    background-image: url("../img/work-bg.png");
+    @include bg-image("../main/desc-webp/bg-work-1x.webp", "../main-desc/bg-work-1x.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
+
+    @include retina(2, 192dpi, 2dppx){
+        @include bg-image("../main/desc-webp/bg-work-2x.webp", "../main-desc/bg-work-2x.jpg");
+    }
+
+    @include retina(3, 288dpi, 3dppx){
+                @include bg-image("../main/desc-webp/bg-work-3x.webp", "../main-desc/bg-work-3x.jpg");
+    }
 
     &-title{
         @include font-style(Montserrat, 36px, 700, 1.5, _, center, $main-white);
@@ -18,9 +26,17 @@
 .work-container{
     width: 970px;
     height: 430px;
-    background-image: url("../img/work-container.png");
+    @include bg-image("../main/desc-webp/img-work-1x.webp", "../main-desc/img-work-1x.jpg");
     background-size: cover;
     margin: 0 auto;
     @include positioning(flex, _, center, center, _, _);
     border-radius: 10px;
+
+    @include retina(2, 192dpi, 2dppx){
+        @include bg-image("../main/desc-webp/img-work-2x.webp", "../main-desc/img-work-2x.jpg");
+    }
+
+    @include retina(3, 288dpi, 3dppx){
+                @include bg-image("../main/desc-webp/img-work-3x.webp", "../main-desc/img-work-3x.jpg");
+    }
 }
